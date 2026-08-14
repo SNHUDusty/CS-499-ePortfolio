@@ -38,9 +38,9 @@ The first enhancement focuses on improving the structure, functionality, maintai
 - Code organization and maintainability
 - Secure software design
 
-**Original Artifact:** Coming soon  
-**Enhanced Artifact:** Coming soon  
-**Enhancement Narrative:** Coming soon
+**Original Artifact:** [View Original Travlr Getaways](artifacts/software-design/original/)  
+**Enhanced Artifact:** [View Enhanced Travlr Getaways](artifacts/software-design/enhanced/)  
+**Enhancement Narrative:** [View Enhancement One Narrative](artifacts/software-design/CS499MilestoneTwoDustyCook%20%281%29.docx)
 
 ---
 
