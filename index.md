@@ -80,9 +80,11 @@ The third enhancement expands the MongoDB database architecture and introduces a
 
 The enhanced application includes a separate reservations collection that relates reservations to trips, generates confirmation codes, calculates reservation totals, tracks booking status, manages trip availability, and restores available seats when reservations are cancelled.
 
-**Original Artifact:** Coming soon  
-**Enhanced Artifact:** Coming soon  
-**Enhancement Narrative:** Coming soon
+**Original Artifact:** [View Original Travlr Getaways](https://github.com/SNHUDusty/CS-499-ePortfolio/tree/main/artifacts/databases/original)
+
+**Enhanced Artifact:** [View Enhanced Travlr Getaways](https://github.com/SNHUDusty/CS-499-ePortfolio/tree/main/artifacts/databases/enhanced)
+
+**Enhancement Narrative:** [View Enhancement Three Narrative](https://github.com/SNHUDusty/CS-499-ePortfolio/blob/main/artifacts/databases/MilestoneFourDustyCook.docx)
 
 ---
 
