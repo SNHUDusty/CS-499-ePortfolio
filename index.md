@@ -39,7 +39,9 @@ The first enhancement focuses on improving the structure, functionality, maintai
 - Secure software design
 
 **Original Artifact:** [View Original Travlr Getaways](artifacts/software-design/original/)  
+
 **Enhanced Artifact:** [View Enhanced Travlr Getaways](artifacts/software-design/enhanced/)  
+
 **Enhancement Narrative:** [View Enhancement One Narrative](artifacts/software-design/CS499MilestoneTwoDustyCook%20%281%29.docx)
 
 ---
