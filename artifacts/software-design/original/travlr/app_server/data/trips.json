@@ -1,0 +1,32 @@
+[
+  {
+    "code": "GALR210214",
+    "name": "Gale Reef",
+    "image": "reef1.jpg",
+    "description": "Experience clear waters, relaxing beaches, and unforgettable views.",
+    "length": "7 days",
+    "start": "2026-02-14",
+    "resort": "Emerald Bay Resort",
+    "perPerson": "$799"
+  },
+  {
+    "code": "DAWR210315",
+    "name": "Dawson Reef",
+    "image": "reef2.jpg",
+    "description": "Enjoy a peaceful island getaway with guided tours and ocean adventures.",
+    "length": "5 days",
+    "start": "2026-03-15",
+    "resort": "Coral Sands Resort",
+    "perPerson": "$899"
+  },
+  {
+    "code": "CLAR210621",
+    "name": "Claire Reef",
+    "image": "reef3.jpg",
+    "description": "Book a tropical escape designed for families, couples, and groups.",
+    "length": "6 days",
+    "start": "2026-06-21",
+    "resort": "Blue Lagoon Resort",
+    "perPerson": "$999"
+  }
+]
