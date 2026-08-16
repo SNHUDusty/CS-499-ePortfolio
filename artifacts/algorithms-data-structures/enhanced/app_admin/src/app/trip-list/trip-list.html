@@ -1,0 +1,176 @@
+<div class="container mt-4">
+  <h2 class="mb-4">Travlr Getaways Administration</h2>
+
+  <form class="card p-3 mb-4" (ngSubmit)="saveTrip()">
+    <h4 class="mb-3">
+      {{ editing ? 'Edit Trip' : 'Add Trip' }}
+    </h4>
+
+    <input
+      class="form-control mb-2"
+      name="code"
+      [(ngModel)]="formTrip.code"
+      placeholder="Code"
+      required
+    />
+
+    <input
+      class="form-control mb-2"
+      name="name"
+      [(ngModel)]="formTrip.name"
+      placeholder="Name"
+      required
+    />
+
+    <input
+      class="form-control mb-2"
+      name="length"
+      [(ngModel)]="formTrip.length"
+      placeholder="Length"
+      required
+    />
+
+    <input
+      class="form-control mb-2"
+      name="start"
+      [(ngModel)]="formTrip.start"
+      type="date"
+      required
+    />
+
+    <input
+      class="form-control mb-2"
+      name="resort"
+      [(ngModel)]="formTrip.resort"
+      placeholder="Resort"
+      required
+    />
+
+    <input
+      class="form-control mb-2"
+      name="perPerson"
+      [(ngModel)]="formTrip.perPerson"
+      placeholder="Price Per Person"
+      required
+    />
+
+    <input
+      class="form-control mb-2"
+      name="image"
+      [(ngModel)]="formTrip.image"
+      placeholder="Image filename"
+      required
+    />
+
+    <textarea
+      class="form-control mb-2"
+      name="description"
+      [(ngModel)]="formTrip.description"
+      placeholder="Description"
+      required>
+    </textarea>
+
+    <div class="d-flex gap-2">
+      <button
+        class="btn btn-primary flex-fill"
+        type="submit">
+        {{ editing ? 'Update Trip' : 'Add Trip' }}
+      </button>
+
+      <button
+        class="btn btn-secondary flex-fill"
+        type="button"
+        (click)="cancelEdit()">
+        Cancel
+      </button>
+    </div>
+  </form>
+
+  <div class="card p-3 mb-4">
+    <h4 class="mb-3">Search and Sort Trips</h4>
+
+    <div class="row g-3">
+      <div class="col-md-6">
+        <label for="searchTerm" class="form-label">
+          Search
+        </label>
+
+        <input
+          id="searchTerm"
+          class="form-control"
+          type="text"
+          placeholder="Search by code, name, resort, or description"
+          [(ngModel)]="searchTerm"
+          [ngModelOptions]="{ standalone: true }"
+          (input)="filterTrips()"
+        />
+      </div>
+
+      <div class="col-md-3">
+        <label for="sortField" class="form-label">
+          Sort By
+        </label>
+
+        <select
+          id="sortField"
+          class="form-select"
+          [(ngModel)]="sortField"
+          [ngModelOptions]="{ standalone: true }"
+          (change)="sortTrips()">
+
+          <option value="name">Name</option>
+          <option value="resort">Resort</option>
+          <option value="length">Length</option>
+          <option value="start">Start Date</option>
+        </select>
+      </div>
+
+      <div class="col-md-3">
+        <label class="form-label">
+          Direction
+        </label>
+
+        <button
+          class="btn btn-secondary w-100"
+          type="button"
+          (click)="toggleSortDirection()">
+
+          {{ sortAscending ? 'Ascending' : 'Descending' }}
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <p>
+    Showing {{ filteredTrips.length }} of {{ trips.length }} trips
+  </p>
+
+  <div
+    *ngIf="filteredTrips.length === 0"
+    class="alert alert-info">
+
+    No trips matched the current search.
+  </div>
+
+  <div *ngFor="let trip of filteredTrips">
+    <app-trip-card [trip]="trip"></app-trip-card>
+
+    <div class="mb-3 d-flex gap-2">
+      <button
+        type="button"
+        class="btn btn-warning"
+        style="width: 100px;"
+        (click)="editTrip(trip)">
+        Edit
+      </button>
+
+      <button
+        type="button"
+        class="btn btn-danger"
+        style="width: 100px;"
+        (click)="deleteTrip(trip.code)">
+        Delete
+      </button>
+    </div>
+  </div>
+</div>

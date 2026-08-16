@@ -1,0 +1,24 @@
+{{> header}}
+
+<main>
+    <section>
+        <h2>Travel</h2>
+
+        {{#each trips}}
+        <article>
+            <h3>{{name}}</h3>
+
+            {{#if image}}
+            <img src="/images/{{image}}" alt="{{name}}" style="max-width: 300px;">
+            {{/if}}
+
+            <p>{{description}}</p>
+            <p><strong>Length:</strong> {{length}}</p>
+            <p><strong>Resort:</strong> {{resort}}</p>
+            <p><strong>Per Person:</strong> {{perPerson}}</p>
+        </article>
+        {{/each}}
+    </section>
+</main>
+
+{{> footer}}
