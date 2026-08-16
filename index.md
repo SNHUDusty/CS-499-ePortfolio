@@ -22,7 +22,7 @@ The completed ePortfolio represents both my technical development and my growth 
 
 The code review documents my evaluation of the original Travlr Getaways application before implementing the three planned enhancements. It identifies areas for improvement in software design and engineering, algorithms and data structures, databases, and security.
 
-**Code Review Video:** Coming soon
+**Code Review Video:** [Watch Code Review Video](https://www.youtube.com/watch?v=y6Zyom01tRI)
 
 ---
 
