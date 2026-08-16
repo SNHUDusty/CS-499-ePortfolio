@@ -58,9 +58,11 @@ The second enhancement introduces multi-field searching, filtering, and comparis
 - Algorithmic problem solving
 - User-focused application design
 
-**Original Artifact:** Coming soon  
-**Enhanced Artifact:** Coming soon  
-**Enhancement Narrative:** Coming soon
+**Original Artifact:** [View Original Travlr Getaways](https://github.com/SNHUDusty/CS-499-ePortfolio/tree/main/artifacts/algorithms-data-structures/original)
+
+**Enhanced Artifact:** [View Enhanced Travlr Getaways](https://github.com/SNHUDusty/CS-499-ePortfolio/tree/main/artifacts/algorithms-data-structures/enhanced)
+
+**Enhancement Narrative:** [View Enhancement Two Narrative](https://github.com/SNHUDusty/CS-499-ePortfolio/blob/main/artifacts/algorithms-data-structures/MilestoneThreeDustyCook.docx)
 
 ---
 
